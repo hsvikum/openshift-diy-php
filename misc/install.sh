@@ -1,7 +1,7 @@
 #!/bin/sh
 
-OPENSHIFT_RUNTIME_DIR=$OPENSHIFT_HOMEDIR/app-root/runtime
-OPENSHIFT_REPO_DIR=$OPENSHIFT_HOMEDIR/app-root/runtime/repo
+OPENSHIFT_RUNTIME_DIR=${OPENSHIFT_HOMEDIR}app-root/runtime
+OPENSHIFT_REPO_DIR=${OPENSHIFT_HOMEDIR}/app-root/runtime/repo
 
 # PHP https://secure.php.net/downloads.php
 # NOTE: If VERSION_PHP is set to "git" a checkout from the development sources will be performed instead.
