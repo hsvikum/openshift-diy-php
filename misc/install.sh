@@ -161,7 +161,7 @@ rm -r $OPENSHIFT_RUNTIME_DIR/tmp/*.tar.gz
 rm -r $OPENSHIFT_RUNTIME_DIR/tmp/*.tgz
 
 echo "COPY TEMPLATES"
-cp $OPENSHIFT_REPO_DIR/misc/templates/bash_profile.tpl $OPENSHIFT_HOMEDIR/app-root/data/.bash_profile
+cp $OPENSHIFT_REPO_DIR/misc/templates/bash_profile.tpl ${OPENSHIFT_HOMEDIR}/app-root/data/.bash_profile
 python $OPENSHIFT_REPO_DIR/misc/parse_templates.py
 
 echo "START APACHE"
